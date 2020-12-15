@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Drag And Drop Game </title>
+</head>
+
+<body>
+
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="./bootstrap//js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+
+    <nav class="navbar navbar-light" style="background-color: green;">
+        <a class="navbar-brand" class="d-flex align-items-center justify-content-center" style="color: white;">
+            <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            Drag And Drop Game
+        </a>
+    </nav>
+    <div class="container ">
+        <!-- <h1 class="d-flex align-items-center justify-content-center">Drag and DropGame</h1> -->
+
+        <div class="row">
+            <div class="col-6" style="color: red;">
+                <h3>Points:<strong><span id="points">0</span></strong></h3>
+            </div>
+            <div class="col-6">
+                <h4>Level:<strong><span id="level">1</span></strong></h4>
+            </div>
+        </div>
+
+        <p id="timer"></p>
+        <h4 style="color: purple;">Source Images:</h4>
+
+        <div class="row" id="source">
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s6" draggable="true" class="source image-size img-thumbnail" src="./img/s6.jpeg" alt="">
+            </div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s5" draggable="true" class="source image-size img-thumbnail" src="./img/s5.jpeg" alt="">
+            </div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s4" draggable="true" class="source image-size img-thumbnail" src="./img/s4.jpeg" alt="">
+            </div>
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s3" draggable="true" class="source image-size img-thumbnail" src="./img/s3.jpeg" alt="">
+            </div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s2" draggable="true" class="image-size img-thumbnail source" src="./img/s2.jpeg" alt="">
+            </div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s1" draggable="true" class="source img-thumbnail image-size" src="./img/s1.jpeg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+        <h4 style="color: purple;">Destination Images</h4>
+        <div class="row" id="destination">
+            <div class="col-md-2 col-4 destDiv"><img id="d1" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d1.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv"><img id="d2" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d2.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv"><img id="d3" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d3.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv"><img id="d4" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d4.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv"><img id="d5" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d5.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv"><img id="d6" draggable="true" class="dest img-thumbnail image-size"
+                    src="./img/d6.jpeg" alt=""></div>
+        </div>
+        <div><button class="btn btn-md btn-primary" id="reset">Reset</button></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
